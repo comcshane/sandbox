@@ -19,7 +19,8 @@ config:
   # Postgres config map name
   postgresConfig: "pulse-postgres-configmap"
   # Postgres hostname
-  postgresHost: "postgres-rw.infra.svc.cluster.local"
+  postgresHost: "pgdb-dgt-postgresql.infra.svc.cluster.local"  
+  # postgresHost: "postgres-rw.infra.svc.cluster.local"
   # Postgres port
   postgresPort: "5432"
   # Postgres SSL mode
@@ -27,7 +28,8 @@ config:
   # Postgres User
   postgresUser: "postgres_user"
   # Postgres Password
-  postgresPassword: "postgres_password"
+  postgresPassword: "secret"
+  #postgresPassword: "postgres_password"
   # Secret name for postgres
   postgresSecret: "pulse-postgres-secret"
   # Secret key for postgres user
